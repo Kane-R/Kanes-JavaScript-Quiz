@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<!-- PUSH TEST -->
 <html lang="en">
+
 <head>
+    <!-- Neccessary meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Kane's FREE JavaScript Quiz</title>
+
+    <!-- Link my custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white">
+
+    <div class="row p-1 mx-1">
+        <div class="col-sm-6 text-left d-flex justify-content-start">
+            <h4 id="highscores"><a href="highscores.html" class="" style="text-decoration: none;">View Highscores</a></h4>
+        </div>
+        <div class="col-sm-6 text-right d-flex justify-content-end float-right">
+            <h4 id="timer">Time: 70</h4>
+        </div>
+    </div>
+    <div class="container bg-white w-50 p-2">
+        <section id="startQuiz" class="text-center">
+
+            <div class="row">
+                <br>
+                <div class="col-12 text-center">
+                    <h1>How Good is Your JavaScript?</h1>
+                    <h4 id="qTitle" class="text-center p-3 m-3">Read the questions and click ONE of the multiple-choice answers. Good luck!
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary rounded-pill" id="startBtn">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="takeQuiz" class="d-none"> 
+            <div class="row p-1">
+                <div class="col m-3">
+                    <h2 id="Question"></h2>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA1"></button>
+                </div>
+            </div>
+
+            <div class="row p-1">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA2"></button>
+                </div>
+            </div>
+
+            <div class="row p-1">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA3"></button>
+                </div>
+            </div>
+
+            <div class="row p-1">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA4"></button>
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6">
+                    <h3 id="result"></h3>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="finalScore" class="d-none">
+            <div class="row p-1">
+                
+                <div class="col-12 text-left">
+                    <h2 id="msgQuizDone"></h2>
+                    <h6 id="msgScore"></h6>
+                </div>
+            </div>
+            <div class="row text-left">
+                <div class="col-12 text-left">
+                    <label for="YourInitials">Enter initials:</label>
+                    <input type="text" name="YourInitials" id="xInitials">
+                    <button type="submit" class="btn btn-primary btn-sm" id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
