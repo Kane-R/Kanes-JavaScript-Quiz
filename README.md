@@ -2,7 +2,9 @@
 
 https://kane-r.github.io/Kanes-JavaScript-Quiz/
 
-AS A coding bootcamp student I WANT to take a timed quiz on JavaScript fundamentals that stores high scores SO THAT I can gauge my progress compared to my peers.
+# Use-cases to be Solved (user story format)
+
+AS as someone wanting to learn JavaScript I WANT to take a timed quiz on JavaScript fundamentals that stores high scores SO THAT I can gauge my progress compared to my peers.
 
 GIVEN I am taking a code quiz
 WHEN I click the start button
